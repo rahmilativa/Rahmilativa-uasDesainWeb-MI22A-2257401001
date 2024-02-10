@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ff1cbb;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed; /* Navbar tetap di bagian atas saat di-scroll */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Menempatkan navbar di atas konten lainnya */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ff1cbb;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  main {
+    margin-top: 120px;
+    background-clip: padding-box;
+  }
+  
+  .katalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Mengatur justifikasi ke awal (kiri) */
+  }
+  
+  .item {
+    width: calc(25% - 20px);
+    margin: 0 10px 20px 0;
+    box-sizing: border-box;
+  }
+  
+  .item img {
+    width: 100%; /* Mengisi lebar container */
+    height: 150px; /* Ubah tinggi sesuai kebutuhan Anda */
+    object-fit: cover; /* Hindari distorsi gambar */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .beli {
+    display: inline-block; /* Mengatur agar tombol bersebelahan */
+    margin-top: 10px;
+    margin-right: 10px; /* Memberikan margin antara tombol */
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .keranjang {
+    display: inline-block; /* Mengatur agar tombol bersebelahan */
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .beli:hover {
+    background-color: #45a049;
+  }
+  
+  .keranjang:hover {
+    background-color: #446f8f;
+  }
+  
+  .promo {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  .promo img {
+    max-width: 430px;
+    height: auto;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .item {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  
+  .nama-barang {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .deskripsi-barang {
+    margin-top: 5px;
+    color: #555;
+  }
+  
+  .info-barang {
+    margin-top: 10px;
+  }
